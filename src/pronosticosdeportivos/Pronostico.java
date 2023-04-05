@@ -1,9 +1,9 @@
 package pronosticosdeportivos;
 
 /**
- *
- * @author 
+ * @authors Leiria Gonzalo, Herrera Elio, Ibarra Gisell
  */
+
 public class Pronostico {
     
     

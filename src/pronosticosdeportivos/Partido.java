@@ -1,20 +1,30 @@
 package pronosticosdeportivos;
 
 /**
- *
- * @author 
+ * @authors Leiria Gonzalo, Herrera Elio, Ibarra Gisell
  */
+
 public class Partido {
-    
-    String nombre = ""; 
-    Equipo equipoLocal;
-    Equipo EquipoVisitante;
-    
+
+    private final Equipo EQUIPO_LOCAL;
+    private Equipo EQUIPO_VISITANTE;
     private int golesEquipoLocal = 0, golesEquipoVisitante = 0;
 
-    public Partido(Equipo equipo, int golesEquipoLocal, int golesEquipoVisitante) {
+    public Partido(Equipo equipoLocal, Equipo equipoVisitante, int golesEquipoLocal, int golesEquipoVisitante) {
+        this.EQUIPO_LOCAL = equipoLocal;
+        this.EQUIPO_VISITANTE = equipoVisitante;
         this.golesEquipoLocal = golesEquipoLocal;
-        this.golesEquipoVisitante = golesEquipoVisitante; 
+        this.golesEquipoVisitante = golesEquipoVisitante;
     }
-        
-   }
+
+    public void Partido() {
+
+        if (golesEquipoLocal == golesEquipoVisitante) {
+            //empate
+        } else if (golesEquipoLocal > golesEquipoVisitante) {
+            //EQUIPO_LOCAL GANA
+        } else {
+            //EQUIPO_VISITANTE GANA
+        }
+    }
+}

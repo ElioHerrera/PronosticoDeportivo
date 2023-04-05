@@ -1,19 +1,23 @@
 package pronosticosdeportivos;
 
 /**
- *
- * @author 
+ * @authors Leiria Gonzalo, Herrera Elio, Ibarra Gisell
  */
+
 public class Equipo {
     
-    String nombre;
+    private String nombre;
        
     public Equipo(String nombre){
         this.nombre = nombre;
     }
 
-       public String getNombre() {
+    public String getNombre() {
         return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public void imprimirNombreDelEquipo() {

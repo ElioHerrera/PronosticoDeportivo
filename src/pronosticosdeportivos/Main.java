@@ -14,7 +14,9 @@ public class Main {
         
         DatosPartidos resultados = new DatosPartidos();
         DatosApuestas pronosticos = new DatosApuestas();
+        
         resultados.DatosPartidos();
+        System.out.println("***************************************");
         pronosticos.DatosApuestas();
         
     }

@@ -1,23 +1,23 @@
 package datos;
 
 // Clase que te permite leer el archivo resultados.csv
-
 import java.io.*;
 
 public class DatosPartidos {
 
     public void DatosPartidos() {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\ELIO\\OneDrive\\Documentos\\NetBeansProjects\\PronosticoDeportivo\\src\\datos\\resultados.csv"));
-            String line = null;
-            while ((line = reader.readLine()) != null) {
-                String[] parts = line.split(",");
-                int totalParts = parts.length;
-                for (int i = 0; i < totalParts; i++) {
-                    System.out.println(parts[i] + " ");
+            BufferedReader lector = new BufferedReader(new FileReader("C:\\Users\\ELIO\\OneDrive\\Documentos\\NetBeansProjects\\PronosticoDeportivo\\src\\datos\\resultados.csv"));
+            String linea = null;
+            while ((linea = lector.readLine()) != null) {
+                String[] datos = linea.split(",");
+                int columnas = datos.length;
+                for (int indice = 0; indice < columnas; indice++) {
+                    System.out.print(datos[indice] + " ");
                 }
-                System.out.println("\n");
+                System.out.println("");
             }
+
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -3,28 +3,47 @@ package pronosticosdeportivos;
 /**
  * @authors Leiria Gonzalo, Herrera Elio, Ibarra Gisell
  */
-
 public class Partido {
 
-    private final Equipo EQUIPO_LOCAL;
-    private Equipo EQUIPO_VISITANTE;
+    private Equipo equipoLocal;
+    private Equipo equipoVisitante;
     private int golesEquipoLocal = 0, golesEquipoVisitante = 0;
 
     public Partido(Equipo equipoLocal, Equipo equipoVisitante, int golesEquipoLocal, int golesEquipoVisitante) {
-        this.EQUIPO_LOCAL = equipoLocal;
-        this.EQUIPO_VISITANTE = equipoVisitante;
+        this.equipoLocal = equipoLocal;
+        this.equipoVisitante = equipoVisitante;
         this.golesEquipoLocal = golesEquipoLocal;
         this.golesEquipoVisitante = golesEquipoVisitante;
     }
 
-    public void Partido() {
+ 
+    public Equipo getEquipoLocal() {
+        return equipoLocal;
+    }
 
-        if (golesEquipoLocal == golesEquipoVisitante) {
-            //empate
+    public Equipo getEquipoVisitante() {
+        return equipoVisitante;
+    }
+
+    public int getGolesEquipoLocal() {
+        return golesEquipoLocal;
+    }
+
+    public int getGolesEquipoVisitante() {
+        return golesEquipoVisitante;
+    }
+    
+    public void ResultadoPartido(){
+       if (golesEquipoLocal == golesEquipoVisitante) {
+            System.out.println("Partido empatado");
+
         } else if (golesEquipoLocal > golesEquipoVisitante) {
-            //EQUIPO_LOCAL GANA
+
+           System.out.println("Gana equipo Local");
         } else {
-            //EQUIPO_VISITANTE GANA
+
+           System.out.println("Gana visitante");
         }
+    
     }
 }

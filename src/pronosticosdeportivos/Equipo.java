@@ -12,6 +12,10 @@ public class Equipo {
         this.nombre = nombre;
     }
 
+    Equipo() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public String getNombre() {
         return nombre;
     }

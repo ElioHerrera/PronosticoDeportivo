@@ -3,7 +3,9 @@ package pronosticosdeportivos;
 /**
  * @authors Leiria Gonzalo, Herrera Elio, Ibarra Gisell
  */
+public enum ResultadoEnum {
 
-public class ResultadoEnum {
-    
+    GANA_EQUIPO_1,
+    EMPATE,
+    GANA_EQUIPO_2   
 }

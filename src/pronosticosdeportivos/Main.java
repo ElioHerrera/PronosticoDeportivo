@@ -65,13 +65,13 @@ public class Main {
         List<Partido> resultados=ArchivoCSV.ImportarResultadosCSV(nombreArchivo);
         
         //Recorro los Pronosticos y los partidos para ver los Resultados y los muestro por pantalla 
-        int acerto=0;
+        int acierto=0;
         for(int indice=0; indice<pronosticos.size();indice++){
             if (pronosticos.get(indice).getResultado().equals(resultados.get(indice).decirResulado())){
-                acerto++;
+                acierto++;
             }
         }
-        System.out.println("Cantidad de Aciertos= " + acerto);
+        System.out.println("Cantidad de Aciertos= " + acierto);
     }
     
 }

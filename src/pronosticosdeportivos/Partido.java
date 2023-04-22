@@ -1,15 +1,15 @@
 package pronosticosdeportivos;
 
-/**
- * @authors Leiria Gonzalo, Herrera Elio, Ibarra Gisell
- */
+
 public class Partido {
 
+    //Atributos del objeto
     private Equipo equipoLocal;
     private Equipo equipoVisitante;
     private int golesEquipoLocal;
     private int golesEquipoVisitante;
 
+    //Constructor
     public Partido(Equipo equipoLocal, int golesEquipoLocal, int golesEquipoVisitante, Equipo equipoVisitante) {
         this.equipoLocal = equipoLocal;
         this.equipoVisitante = equipoVisitante;
@@ -17,63 +17,38 @@ public class Partido {
         this.golesEquipoVisitante = golesEquipoVisitante;
     }
 
-    public Partido(Equipo equipoLocal, Equipo equipoVisitante) {
-        this.equipoLocal = equipoLocal;
-        this.equipoVisitante = equipoVisitante;
-        this.golesEquipoLocal = 0;
-        this.golesEquipoVisitante = 0;
+    Partido(Equipo equipoLocal, int i, Equipo equipoVisitante, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    // RETORNA RESULTADO
-    public ResultadoEnum decirResulado() {
-
-        if (golesEquipoLocal > golesEquipoVisitante) {
-            return ResultadoEnum.GANA_EQUIPO_1;
-        } else if (golesEquipoVisitante > golesEquipoLocal) {
-            return ResultadoEnum.GANA_EQUIPO_2;
-        } else {
-            return ResultadoEnum.EMPATE;
-        }
-    }
-
+    //Métodos get para cada atributo de Partido
     public Equipo getEquipoUno() {
         return equipoLocal;
-    }
-
-    public void setEquipoUno(Equipo equipo) {
-        this.equipoLocal = equipo;
     }
 
     public Equipo getEquipoDos() {
         return equipoVisitante;
     }
 
-    public void setEquipoDos(Equipo equipo) {
-        equipoVisitante = equipo;
-    }
-
     public int getGolesEquipoUno() {
         return golesEquipoLocal;
-    }
-
-    public void setGolesEquipoUno(int golesEquipoUno) {
-        this.golesEquipoLocal = golesEquipoUno;
     }
 
     public int getGolesEquipoDos() {
         return golesEquipoVisitante;
     }
+       
+    // Método para retornar resultado
+    public ResultadoEnum resultadoPartido() {
 
-    public void setGolesEquipoDos(int golesEquipoDos) {
-        this.golesEquipoVisitante = golesEquipoDos;
+        if (this.golesEquipoLocal > this.golesEquipoVisitante) {
+            return ResultadoEnum.GANA_EQUIPO_UNO;
+        } else if (this.golesEquipoVisitante > this.golesEquipoLocal) {
+            return ResultadoEnum.GANA_EQUIPO_DOS;
+        } else {
+            return ResultadoEnum.EMPATE;
+        }
     }
 
-    //Metodo Para que me devuta el array de string que necesito para 
-    //guardar en el formato CSV
-    public String[] formatoDeCSV() {
-        String[] datos = {equipoLocal.getNombre(), String.valueOf(golesEquipoLocal),
-            String.valueOf(golesEquipoVisitante), equipoVisitante.getNombre()};
-
-        return datos;
-    }
+   
 }

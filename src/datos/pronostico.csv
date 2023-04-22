@@ -1,3 +1,6 @@
-Equipo 1,Gana 1,Empata,Gana 2, Equipo2
-Argentina,x,,,Arabia Saudita
-Polonia,,x,,México
+Argentina,,,x,Arabia Saudita
+Mexico,,x,,Polonia
+Argentina,x,,,Mexico
+Polonia,x,,,Arabia Saudita
+Arabia Saudita,,,x,Mexico
+Polonia,,,x,Argentina

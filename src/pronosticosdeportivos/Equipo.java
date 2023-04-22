@@ -1,25 +1,22 @@
 package pronosticosdeportivos;
 
-/**
- * @authors Leiria Gonzalo, Herrera Elio, Ibarra Gisell
- */
 
 public class Equipo {
     
-    private String nombre;
+    //Atributo del objeto
+    private final String NOMBRE;
        
+    //Constructor
     public Equipo(String nombre){
-        this.nombre = nombre;
+        this.NOMBRE = nombre;
     }
 
+    //Metodo get
     public String getNombre() {
-        return nombre;
+        return NOMBRE;
     }
    
-    public void setNombre(String nombre) {
-        this.nombre=nombre;
-    }
-
+    //Metodo para imprimir en pantalla el nombre del equipo
     public void imprimirNombreDelEquipo() {
         System.out.println(this.getNombre());
     }

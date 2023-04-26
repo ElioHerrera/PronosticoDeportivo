@@ -1,6 +1,5 @@
 package pronosticosdeportivos;
 
-
 public class Equipo {
     
     //Atributo del objeto
@@ -16,8 +15,4 @@ public class Equipo {
         return NOMBRE;
     }
    
-    //Metodo para imprimir en pantalla el nombre del equipo
-    public void imprimirNombreDelEquipo() {
-        System.out.println(this.getNombre());
-    }
-}
+ }

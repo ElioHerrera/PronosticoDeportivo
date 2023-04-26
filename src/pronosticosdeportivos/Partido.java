@@ -1,6 +1,5 @@
 package pronosticosdeportivos;
 
-
 public class Partido {
 
     //Atributos del objeto
@@ -15,10 +14,6 @@ public class Partido {
         this.equipoVisitante = equipoVisitante;
         this.golesEquipoLocal = golesEquipoLocal;
         this.golesEquipoVisitante = golesEquipoVisitante;
-    }
-
-    Partido(Equipo equipoLocal, int i, Equipo equipoVisitante, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     //Métodos get para cada atributo de Partido
